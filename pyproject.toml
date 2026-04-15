@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agss-public"
+version = "0.1.0"
+description = "Public AGSS release accompanying the CVPR 2026 paper 'Semantic Scale Space: A Framework for Controllable Image Abstraction'"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "Kazu Mishiba" }
+]
+dependencies = [
+  "numpy>=1.24",
+  "Pillow>=10.0",
+  "efficientnet-pytorch>=0.7.1",
+  "scipy>=1.10"
+]
+
+[project.scripts]
+agss-infer = "agss.cli:main"
+agss-e1-partial = "agss.e1_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

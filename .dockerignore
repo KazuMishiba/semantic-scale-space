@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.gitignore
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+outputs/
+artifacts/
+.cache/
+external/UAED_MuGE/
+external/checkpoints/*.pth
+external/checkpoints/*.pt

@@ -1,0 +1,19 @@
+services:
+  agss-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: agss-public-dev:latest
+    working_dir: /workspace/agss
+    stdin_open: true
+    tty: true
+    gpus: all
+    volumes:
+      - ./:/workspace/agss
+      - ./external:/workspace/external
+      - ./.cache/torch:/root/.cache/torch
+    environment:
+      PYTHONPATH: /workspace/agss/src
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: compute,utility
+    command: bash
