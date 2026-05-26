@@ -202,13 +202,6 @@ This repository does not redistribute MuGE source code, MuGE checkpoints, or dat
 
 If you use this repository, please cite the following paper.
 
-### Publication
-
-* Title: *Semantic Scale Space: A Framework for Controllable Image Abstraction*
-* Author: Kazu Mishiba
-* Affiliation: Tottori University
-* Venue: CVPR 2026
-
 ### BibTeX
 
 ```bibtex
@@ -216,7 +209,8 @@ If you use this repository, please cite the following paper.
   title     = {Semantic Scale Space: A Framework for Controllable Image Abstraction},
   author    = {Mishiba, Kazu},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year      = {2026}
+  year      = {2026},
+  pages     = {17367-17376}
 }
 ```
 
